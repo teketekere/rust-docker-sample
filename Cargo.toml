@@ -1,8 +1,9 @@
 [package]
 name = "rust-docker-sample"
 version = "0.1.0"
+edition = "2018"
 authors = ["teketekere <hujikoseina@gmail.com>"]
-license-file = "LICENSE"
+license = "MIT"
 description = "A sample project"
 repository = "https://github.com/teketekere/rust-docker-sample"
 readme = "README.md"
