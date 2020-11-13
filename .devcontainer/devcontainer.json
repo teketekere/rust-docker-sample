@@ -1,34 +1,36 @@
 {
-  "name": "Rust-deps",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "lldb.executable": "/usr/bin/lldb",
-    "files.watcherExclude": {
-      "**/target/**": true
+    "name": "Rust-deps",
+    "build": {
+      "dockerfile": "Dockerfile"
     },
-    "rust.rustfmt_path": "rustfmt",
-    "rust.build_on_save": true,
-    "rust.clippy_preference": "on"
-  },
-  "extensions": [
-    "rust-lang.rust",
-    "bungcip.better-toml",
-    "vadimcn.vscode-lldb",
-    "mutantdino.resourcemonitor",
-    "durzn.brackethighlighter",
-    "github.vscode-pull-request-github",
-    "eamodio.gitlens",
-    "davidanson.vscode-markdownlint",
-    "christian-kohler.path-intellisense",
-    "esbenp.prettier-vscode",
-    "shardulm94.trailing-spaces",
-    "mosapride.zenkaku",
-    "vtrois.gitmoji-vscode",
-    "matklad.rust-analyzer",
-    "kevinkyang.auto-comment-blocks"
-  ]
+    "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "lldb.executable": "/usr/bin/lldb",
+      "files.watcherExclude": {
+        "**/target/**": true
+      },
+      "rust.rustfmt_path": "rustfmt",
+      "rust.build_on_save": true,
+      "rust.clippy_preference": "on",
+      "rust-client.autoStartRls": true,
+      "rust-client.engine": "rust-analyzer"
+    },
+    "extensions": [
+      "rust-lang.rust",
+      "bungcip.better-toml",
+      "vadimcn.vscode-lldb",
+      "mutantdino.resourcemonitor",
+      "durzn.brackethighlighter",
+      "github.vscode-pull-request-github",
+      "eamodio.gitlens",
+      "davidanson.vscode-markdownlint",
+      "christian-kohler.path-intellisense",
+      "esbenp.prettier-vscode",
+      "shardulm94.trailing-spaces",
+      "mosapride.zenkaku",
+      "vtrois.gitmoji-vscode",
+      "matklad.rust-analyzer",
+      "kevinkyang.auto-comment-blocks"
+    ]
 }
