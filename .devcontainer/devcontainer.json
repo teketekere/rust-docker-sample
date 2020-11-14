@@ -13,7 +13,6 @@
       "rust.rustfmt_path": "rustfmt",
       "rust.build_on_save": true,
       "rust.clippy_preference": "on",
-      "rust-client.autoStartRls": true,
       "rust-client.engine": "rust-analyzer"
     },
     "extensions": [
