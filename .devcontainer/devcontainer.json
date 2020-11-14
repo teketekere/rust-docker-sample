@@ -12,8 +12,7 @@
       },
       "rust.rustfmt_path": "rustfmt",
       "rust.build_on_save": true,
-      "rust.clippy_preference": "on",
-      "rust-client.engine": "rust-analyzer"
+      "rust.clippy_preference": "on"
     },
     "extensions": [
       "rust-lang.rust",
